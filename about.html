@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Wrinkle Communications, Inc.</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cream': '#FDFBF7',
+                        'brand-black': '#121212',
+                        'brand-pink': '#FF007F',
+                        'brand-teal': '#008080',
+                        'brand-teal-light': '#E0F2F1',
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-cream text-brand-black font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-brand-cream/90 backdrop-blur-md border-b border-gray-200 py-4 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-brand-black text-white rounded-full flex items-center justify-center group-hover:bg-brand-pink transition-colors duration-300">
+                    <i class="fa-solid fa-tower-cell"></i>
+                </div>
+                <span class="font-extrabold text-xl tracking-tight">WRINKLE <span class="text-brand-teal">COMMS</span></span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="index.html" class="hover:text-brand-teal transition-colors">Home</a>
+                <a href="about.html" class="text-brand-pink">About</a>
+                <a href="services.html" class="hover:text-brand-teal transition-colors">Services</a>
+                <a href="contact.html" class="px-6 py-2 bg-brand-black text-white rounded-full hover:bg-brand-pink transition-colors duration-300">Contact Us</a>
+            </div>
+            <button class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <header class="pt-40 pb-20 bg-brand-black text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand-pink rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <p class="text-brand-teal font-bold tracking-widest uppercase mb-4 wow animate__animated animate__fadeInDown">Who We Are</p>
+            <h1 class="text-5xl lg:text-6xl font-extrabold mb-6 wow animate__animated animate__fadeInUp">Driving the <span class="text-brand-pink">Conversation</span></h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                Located in Lady Lake, FL, we are building the infrastructure that powers modern businesses and communities.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative wow animate__animated animate__fadeInLeft">
+                <div class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-teal rounded-3xl z-0"></div>
+                <img src="images/3.jpg" alt="Our Team working" class="relative z-10 rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500">
+            </div>
+
+            <div class="wow animate__animated animate__fadeInRight">
+                <h2 class="text-3xl font-bold mb-6">Beyond the Connection.</h2>
+                <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                    Wrinkle Communications, Inc. was founded on a simple premise: <strong>Communication is the lifeline of progress.</strong> 
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    Operating out of French Road, Lady Lake, we specialize in "Communication Services, nec" (Not Elsewhere Classified). This allows us to handle niche, complex, and bespoke communication challenges that standard providers ignore. From specialized signal transmission to robust corporate infrastructure, we ensure your message is heard.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6 border-t border-gray-200 pt-8">
+                    <div>
+                        <h3 class="text-4xl font-extrabold text-brand-pink">100%</h3>
+                        <p class="text-sm font-bold uppercase tracking-wider mt-1">Uptime Goal</p>
+                    </div>
+                    <div>
+                        <h3 class="text-4xl font-extrabold text-brand-teal">24/7</h3>
+                        <p class="text-sm font-bold uppercase tracking-wider mt-1">Local Support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-teal/5 overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Our Core Values</h2>
+                <p class="text-gray-500 mt-2">The principles that power our grid.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 values-grid">
+                <div class="value-card bg-white p-8 rounded-2xl shadow-lg border-b-4 border-brand-pink">
+                    <div class="w-12 h-12 bg-brand-pink/10 text-brand-pink rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Speed</h3>
+                    <p class="text-gray-600 text-sm">In the modern world, latency is the enemy. We design for maximum throughput and minimal delay.</p>
+                </div>
+
+                <div class="value-card bg-white p-8 rounded-2xl shadow-lg border-b-4 border-brand-teal">
+                    <div class="w-12 h-12 bg-brand-teal/10 text-brand-teal rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Security</h3>
+                    <p class="text-gray-600 text-sm">We treat your data integrity with the highest priority, employing advanced encryption standards.</p>
+                </div>
+
+                <div class="value-card bg-white p-8 rounded-2xl shadow-lg border-b-4 border-brand-black">
+                    <div class="w-12 h-12 bg-brand-black/10 text-brand-black rounded-lg flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Community</h3>
+                    <p class="text-gray-600 text-sm">We are proud to be a Florida-based business, serving our neighbors in Lady Lake and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-80 relative md:bg-fixed bg-center bg-cover" style="background-image: url('images/4.jpg');">
+        <div class="absolute inset-0 bg-brand-teal/80 flex items-center justify-center text-center px-6">
+            <div>
+                <h2 class="text-white text-3xl md:text-5xl font-bold mb-6">Ready to connect?</h2>
+                <a href="contact.html" class="px-8 py-3 bg-white text-brand-teal font-bold rounded-full hover:bg-brand-black hover:text-white transition-colors">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-black text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-white text-brand-black rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-tower-cell text-sm"></i>
+                        </div>
+                        <span class="font-bold text-lg">WRINKLE COMMS</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed">Innovating the way we connect. Providing superior communication services for tomorrow's challenges.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-brand-pink">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-brand-pink">Contact</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-brand-teal"></i><span>39601 French Road,<br>Lady Lake, FL 32159</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-brand-teal"></i><span>352-269-8547</span></li>
+                        <li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-brand-teal"></i><a href="mailto:support@wrinklecomms.com" class="hover:text-white">support@wrinklecomms.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-brand-pink">Follow Us</h4>
+                    <div class="flex gap-4">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 text-center text-gray-600 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Wrinkle Communications, Inc. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart text-brand-pink"></i> for the future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script>
+        // Initialize WOW
+        new WOW().init();
+
+        // Staggered Animation for Value Cards using Anime.js
+        document.addEventListener('DOMContentLoaded', () => {
+            anime({
+                targets: '.value-card',
+                translateY: [50, 0], // Slide up
+                opacity: [0, 1],     // Fade in
+                delay: anime.stagger(200, {start: 500}), // Stagger delay by 200ms
+                easing: 'easeOutExpo',
+                duration: 1200
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.replace('py-4', 'py-2');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.replace('py-2', 'py-4');
+            }
+        });
+    </script>
+</body>
+</html>

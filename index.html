@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrinkle Communications, Inc. | Connecting the Future</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-cream': '#FDFBF7',
+                        'brand-black': '#121212',
+                        'brand-pink': '#FF007F', /* Vibrant Pink */
+                        'brand-teal': '#008080', /* Professional Teal */
+                        'brand-teal-light': '#E0F2F1',
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #121212;
+            border-radius: 5px;
+        }
+        .hero-shape {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-black font-sans antialiased overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 bg-brand-cream/90 backdrop-blur-md border-b border-gray-200 py-4 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 bg-brand-black text-white rounded-full flex items-center justify-center group-hover:bg-brand-pink transition-colors duration-300">
+                    <i class="fa-solid fa-tower-cell"></i>
+                </div>
+                <span class="font-extrabold text-xl tracking-tight">WRINKLE <span class="text-brand-teal">COMMS</span></span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="index.html" class="text-brand-pink">Home</a>
+                <a href="about.html" class="hover:text-brand-teal transition-colors">About</a>
+                <a href="services.html" class="hover:text-brand-teal transition-colors">Services</a>
+                <a href="contact.html" class="px-6 py-2 bg-brand-black text-white rounded-full hover:bg-brand-pink transition-colors duration-300">Contact Us</a>
+            </div>
+
+            <button class="md:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="max-w-2xl z-10 wow animate__animated animate__fadeInLeft">
+                <div class="inline-block px-4 py-1 mb-6 border border-brand-teal text-brand-teal rounded-full text-xs font-bold uppercase tracking-widest">
+                    Communications Services, NEC
+                </div>
+                <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
+                    Seamless <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-pink to-brand-teal">Connections</span>
+                    For a Modern World.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Wrinkle Communications, Inc. provides top-tier infrastructure and communication solutions. From Lady Lake, FL to the world, we keep you connected.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="services.html" class="px-8 py-4 bg-brand-pink text-white font-bold rounded-full shadow-lg hover:bg-brand-black hover:shadow-xl transition-all transform hover:-translate-y-1 text-center">
+                        Our Services
+                    </a>
+                    <a href="contact.html" class="px-8 py-4 border-2 border-brand-black text-brand-black font-bold rounded-full hover:bg-brand-black hover:text-white transition-all text-center">
+                        Get Support
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative z-10 flex justify-center lg:justify-end wow animate__animated animate__fadeInRight">
+                <div class="relative w-full max-w-md aspect-square">
+                    <div class="float-element absolute inset-0 bg-brand-teal opacity-10 hero-shape transform rotate-6"></div>
+                    <img src="images/1.jpg" alt="Communication Infrastructure" class="relative z-10 object-cover w-full h-full rounded-3xl shadow-2xl border-4 border-white transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+                    
+                    <div class="absolute -bottom-6 -left-6 bg-brand-cream p-4 rounded-xl shadow-lg border border-gray-100 flex items-center gap-3 animate-bounce" style="animation-duration: 3s;">
+                        <div class="bg-green-100 text-green-600 p-2 rounded-full">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 font-bold">Status</p>
+                            <p class="text-sm font-bold">Operational</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-brand-teal-light to-transparent -z-10"></div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 wow animate__animated animate__fadeInUp">
+                <div class="max-w-xl">
+                    <h2 class="text-4xl font-bold mb-4">Reliable Solutions</h2>
+                    <p class="text-gray-600">We operate primarily in the specialized communication services sector, ensuring robustness and clarity.</p>
+                </div>
+                <a href="services.html" class="hidden md:inline-block text-brand-pink font-bold hover:text-brand-black transition-colors mt-4 md:mt-0">
+                    View all services <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group p-8 bg-brand-cream rounded-3xl hover:bg-brand-black hover:text-white transition-all duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="w-14 h-14 bg-white text-brand-black rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-pink group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Infrastructure</h3>
+                    <p class="text-gray-500 group-hover:text-gray-400 mb-6">Building the backbone of modern communication networks with precision engineering.</p>
+                    <a href="#" class="text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-brand-pink transition-all">Learn More</a>
+                </div>
+
+                <div class="group p-8 bg-brand-cream rounded-3xl hover:bg-brand-black hover:text-white transition-all duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="w-14 h-14 bg-white text-brand-black rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-pink group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Transmission</h3>
+                    <p class="text-gray-500 group-hover:text-gray-400 mb-6">High-fidelity signal transmission services for commercial and private sectors.</p>
+                    <a href="#" class="text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-brand-pink transition-all">Learn More</a>
+                </div>
+
+                <div class="group p-8 bg-brand-cream rounded-3xl hover:bg-brand-black hover:text-white transition-all duration-300 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="w-14 h-14 bg-white text-brand-black rounded-full flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-pink group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Support Systems</h3>
+                    <p class="text-gray-500 group-hover:text-gray-400 mb-6">Dedicated maintenance and support teams to keep your lines open 24/7.</p>
+                    <a href="#" class="text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-brand-pink transition-all">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="bg-brand-black text-white rounded-[3rem] overflow-hidden shadow-2xl">
+                <div class="grid lg:grid-cols-2">
+                    <div class="relative h-96 lg:h-auto">
+                        <img src="images/2.jpg" alt="Office Team" class="absolute inset-0 w-full h-full object-cover opacity-80">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-black to-transparent"></div>
+                    </div>
+                    <div class="p-12 lg:p-20 flex flex-col justify-center">
+                        <i class="fa-solid fa-quote-left text-brand-teal text-4xl mb-6"></i>
+                        <h2 class="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+                            Based in Lady Lake, serving the entire spectrum of communication needs.
+                        </h2>
+                        <p class="text-gray-400 mb-8 text-lg">
+                            Wrinkle Communications, Inc. is dedicated to pushing the boundaries of what's possible in the "Communication Services, nec" industry.
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <a href="about.html" class="text-brand-pink font-bold hover:text-white transition-colors">About Us</a>
+                            <span class="text-gray-600">|</span>
+                            <span class="text-brand-teal">Est. 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-brand-teal/10">
+        <div class="container mx-auto px-6 text-center wow animate__animated animate__pulse">
+            <h2 class="text-4xl font-bold mb-6">Ready to upgrade your reach?</h2>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">Contact our support team today to discuss your infrastructure requirements.</p>
+            <a href="contact.html" class="inline-block px-10 py-5 bg-brand-pink text-white text-lg font-bold rounded-full shadow-xl hover:bg-brand-black hover:scale-105 transition-all duration-300">
+                Start a Conversation
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-brand-black text-white pt-20 pb-10">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-12 border-b border-gray-800 pb-12">
+                
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-8 h-8 bg-white text-brand-black rounded-full flex items-center justify-center">
+                            <i class="fa-solid fa-tower-cell text-sm"></i>
+                        </div>
+                        <span class="font-bold text-lg">WRINKLE COMMS</span>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Innovating the way we connect. Providing superior communication services for tomorrow's challenges.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-brand-pink">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-brand-pink">Contact</h4>
+                    <ul class="space-y-4 text-gray-400 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-brand-teal"></i>
+                            <span>39601 French Road,<br>Lady Lake, FL 32159</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brand-teal"></i>
+                            <span>352-269-8547</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-brand-teal"></i>
+                            <a href="mailto:support@wrinklecomms.com" class="hover:text-white">support@wrinklecomms.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-lg mb-6 text-brand-pink">Follow Us</h4>
+                    <div class="flex gap-4">
+                        
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 text-center text-gray-600 text-sm flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2025 Wrinkle Communications, Inc. All rights reserved.</p>
+                <p>Designed with <i class="fa-solid fa-heart text-brand-pink"></i> for the future.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script>
+        // Initialize Wow.js (Scroll Reveal)
+        new WOW().init();
+
+        // Anime.js Animation for Hero Shape
+        anime({
+            targets: '.float-element',
+            translateY: [0, 20],
+            rotate: [6, 10],
+            loop: true,
+            direction: 'alternate',
+            easing: 'easeInOutSine',
+            duration: 3000
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.classList.replace('py-4', 'py-2');
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.classList.replace('py-2', 'py-4');
+            }
+        });
+    </script>
+</body>
+</html>
